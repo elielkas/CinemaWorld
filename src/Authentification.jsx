@@ -4,18 +4,31 @@ import Formulaire1 from "./Composants/Formulaire1";
 
 const Authentification = () => {
     const styles = {
-        display : 'flex', 
-        flexDirection : 'row', 
-        minHeight : '100vh',
-        backgroundImage : 'url(/Photos/images-17.jpg)',
-        backgroundSize :'cover',
+        display: 'flex',
+        flexDirection: 'row',
+        minHeight: '100vh',
+        backgroundImage: 'url(/Photos/images-17.jpg)',
+        backgroundSize: 'cover',
         backgroundPosition: 'center',
     };
-    return(
-        <div style={styles}>
-            <Presentation/>
-            <Formulaire1/>
-        </div>
+
+    return (
+        <>
+            <style>
+                {`
+                    @media (max-width: 768px) {
+                        .auth-container {
+                            flex-direction: column !important;
+                        }
+                    }
+                `}
+            </style>
+            <div className="auth-container" style={styles}>
+                <Presentation />
+                <Formulaire1 />
+            </div>
+        </>
     );
 };
+
 export default Authentification;
