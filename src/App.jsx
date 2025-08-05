@@ -4,9 +4,9 @@ import Authentification from './Authentification';
 import MainLayout from './MainLayout';
 import Accueil from './Accueil';
 import Apropos from './Apropos';
-import Contact from './pages/Contact';
 import SavoirPlus from './SavoirPlus';
 import Publication from './Publication';
+import Contact from './pages/Profil';
 
 function App() {
     return (
