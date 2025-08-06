@@ -50,7 +50,7 @@ const Contact = () => {
 
   const handleSave = async () => {
     try {
-      const response = await fetch("http://localhost/BackEnd/Modifier.php", {
+      const response = await fetch("https://cinema-worldteam.alwaysdata.net/BackEnd/Modifier.php", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -84,7 +84,7 @@ const Contact = () => {
     formData.append("role", role);
   
     try {
-      const response = await fetch("http://localhost/BackEnd/ModifierPhoto.php", {
+      const response = await fetch("https://cinema-worldteam.alwaysdata.net/BackEnd/ModifierPhoto.php", {
         method: "POST",
         body: formData,
       });
@@ -137,7 +137,7 @@ const Contact = () => {
         {userInfo.photo && (
           <div style={{ marginBottom: "1rem" }}>
             <img
-              src={`http://localhost/${userInfo.photo}`}
+              src={`https://cinema-worldteam.alwaysdata.net/${userInfo.photo}`}
               alt="Photo de profil"
               style={{width: "150px", height: "150px", borderRadius: "50%", objectFit: "cover",}}
             />

@@ -3,49 +3,49 @@ import React, { useState, useEffect } from 'react';
 const fictionData = [
   // ... (vos objets title, img, description)
   {
-    title: 'Inception',
-    img: '../Photos/images-57.jpg',
-    description: "Un voleur qui infiltre les rêves pour voler des secrets d'entreprise.",
+    title: 'Legends of tomorrow',
+    img: '../Photos/download-22.jpg',
+    description: "Groupe des héros aux super-pouvoirs qui protègent la terre des ménances extra-terreste",
   },
   {
-    title: 'Interstellar',
-    img: '../Photos/images-57.jpg',
-    description: "Une équipe d'explorateurs voyage à travers un trou de ver pour sauver l'humanité.",
+    title: 'Justice league',
+    img: '../Photos/download-21.jpg',
+    description: "Groupe des héros aux super-pouvoirs qui protègent la terre des ménances extra-terreste",
   },
   {
-    title: 'Matrix',
-    img: '../Photos/images-57.jpg',
-    description: "Un pirate informatique découvre la vérité sur la réalité simulée qu'est la Matrice.",
+    title: 'Avengers',
+    img: '../Photos/download-20.jpg',
+    description: "Groupe des héros aux super-pouvoirs qui protègent la terre des ménances extra-terreste",
   },
   {
-    title: 'The Island',
-    img: '../Photos/images-57.jpg',
-    description: "Des clones tentent de fuir une vie de mensonge et de contrôle.",
+    title: 'Eternal',
+    img: '../Photos/download-59.jpg',
+    description: "Des dieux vénus de l'espace atterissent sur la terre, les uns veulent coloniser la terre et les autres s'opposent",
   },
   {
-    title: 'Blade Runner',
-    img: '../Photos/images-57.jpg',
+    title: 'Green arrow',
+    img: '../Photos/download-23.jpg',
+    description: "Un miliardaire qui depuis un super hero après s'être assorti d'un drame qui a frappé sa vie",
+  },
+  {
+    title: 'Avatar',
+    img: '../Photos/download-5.jpg',
     description: "Un policier doit éliminer des androïdes rebelles dans un monde futuriste.",
   },
   {
-    title: 'Blade Runner',
-    img: '../Photos/images-57.jpg',
-    description: "Un policier doit éliminer des androïdes rebelles dans un monde futuriste.",
+    title: 'Vampire diarlies',
+    img: '../Photos/download-62.jpg',
+    description: "L'histoire d'une jeune fille qui tombe amoureuse d'un vampire et se fait mordre",
   },
   {
-    title: 'Blade Runner',
-    img: '../Photos/images-57.jpg',
-    description: "Un policier doit éliminer des androïdes rebelles dans un monde futuriste.",
+    title: 'Alice in boadland',
+    img: '../Photos/download-77.jpg',
+    description: "Une metéorite tombe sur le japon et les victimes font le même rêve étant dans le comma",
   },
   {
-    title: 'Blade Runner',
-    img: '../Photos/images-57.jpg',
-    description: "Un policier doit éliminer des androïdes rebelles dans un monde futuriste.",
-  },
-  {
-    title: 'Blade Runner',
-    img: '../Photos/images-57.jpg',
-    description: "Un policier doit éliminer des androïdes rebelles dans un monde futuriste.",
+    title: 'blood',
+    img: '../Photos/download-94.jpg',
+    description: "Un boxeur renconte un autre boxeur ancien militaire et font équipe pour venger les innocents",
   },
 ];
 
