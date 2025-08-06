@@ -30,7 +30,7 @@ const Inscription = () => {
     form.append("mdp", formData.mdp);
     if (formData.photo) form.append("photo", formData.photo);
 
-      fetch('http://localhost/BackEnd/inscription.php', {
+      fetch('https://cinema-worldteam.alwaysdata.net/BackEnd/inscription.php', {
         method: 'POST',
         body: form
       })

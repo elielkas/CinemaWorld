@@ -6,7 +6,7 @@ const DernierSortie = () => {
 
   // Chargement des films au montage
   useEffect(() => {
-    fetch('http://localhost/BackEnd/getDerniersFilms.php')
+    fetch('https://cinema-worldteam.alwaysdata.net/BackEnd/getDerniersFilms.php')
       .then((res) => res.json())
       .then((data) => {
         console.log('Films récupérés :', data);
@@ -28,7 +28,7 @@ const DernierSortie = () => {
     const action = userLiked ? 'like' : 'unlike';
 
     try {
-      const response = await fetch('http://localhost/BackEnd/updateLike.php', {
+      const response = await fetch('https://cinema-worldteam.alwaysdata.net/BackEnd/updateLike.php', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ id, action }),
@@ -68,7 +68,7 @@ const DernierSortie = () => {
           <div key={film.id} style={styles.card}>
             <h3 style={styles.h3}>{film.nom}</h3>
             <img
-              src={`http://localhost/${film.photo}`}
+              src={`https://cinema-worldteam.alwaysdata.net/${film.photo}`}
               alt={film.nom}
               style={styles.image}
             />

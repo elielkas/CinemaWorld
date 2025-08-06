@@ -4,7 +4,7 @@ const Comptes = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost/BackEnd/AfficherToutUtilisateurs.php")
+    fetch("https://cinema-worldteam.alwaysdata.net/BackEnd/AfficherToutUtilisateurs.php")
       .then((res) => res.json())
       .then((data) => {
         if (data.success) setUsers(data.users);
@@ -20,7 +20,7 @@ const Comptes = () => {
     const confirmDelete = window.confirm("Êtes-vous sûr de vouloir supprimer ce compte ?");
     if (!confirmDelete) return;
 
-    fetch("http://localhost/BackEnd/EffacerUtilisateur.php", {
+    fetch("https://cinema-worldteam.alwaysdata.net/BackEnd/EffacerUtilisateur.php", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email }),

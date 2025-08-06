@@ -40,7 +40,7 @@ const Publier = () => {
     form.append("commentaire", formData.commentaire);
     if (formData.photo) form.append("photo", formData.photo);
 
-    fetch('http://localhost/BackEnd/PublierSerie.php', {
+    fetch('https://cinema-worldteam.alwaysdata.net/BackEnd/PublierSerie.php', {
       method: 'POST',
       body: form
     })
